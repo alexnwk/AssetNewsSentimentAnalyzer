@@ -31,7 +31,7 @@ def chunk(text: str, max_token_len=3000):
     return text
 
 
-def get_gpt_response(user_prompt: str, openai_key: str, generation_tk_limit=None, preferred_model="gpt-3.5-turbo", system_instruction=None):
+def get_gpt_response(user_prompt: str, openai_key: str, generation_tk_limit=None, preferred_model="gpt-4o-mini", system_instruction=None):
     client = OpenAI(api_key=openai_key)
 
     if system_instruction is not None:
